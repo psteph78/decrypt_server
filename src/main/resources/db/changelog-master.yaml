@@ -1,0 +1,26 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: steph
+      changes:
+        - insert:
+            tableName: level
+            columns:
+              - column:
+                  name: id
+                  value: 1
+              - column:
+                  name: level
+                  value: 1
+              - column:
+                  name: points
+                  value: 10.2
+              - column:
+                  name: difficulty
+                  value: "EASY"
+              - column:
+                  name: hint
+                  value: "hint"
+              - column:
+                  name: solution
+                  value: "solution"

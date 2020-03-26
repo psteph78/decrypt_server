@@ -1,0 +1,142 @@
+databaseChangeLog:
+  - postConditions:
+      - include:
+          file: /db/changelog-master.yaml
+
+  - changeSet:
+      id: 1
+      author: steph
+      changes:
+        - insert:
+            tableName: user
+            columns:
+              - column:
+                  name: username
+                  value: "admin"
+              - column:
+                  name: password
+                  value: "$2a$10$slYQmyNdGzTn7ZLBXBChFOC9f6kFjAqPhccnP6DxlWXx2lPk1C3G6"
+              - column:
+                  name: points
+                  value: 0
+              - column:
+                  name: email
+                  value: "admin@gmail.com"
+              - column:
+                  name: status
+                  value: "VERIFIED"
+
+  - changeSet:
+      id: 2
+      author: steph
+      changes:
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 1
+              - column:
+                  name: difficulty
+                  value: "EASY"
+              - column:
+                  name: problem
+                  value: "263,_,63,_,1,_,105,297,_120,_-> picture"
+              - column:
+                  name: hint
+                  value: "They all mirror each other"
+              - column:
+                  name: solution
+                  value: "411"
+              - column:
+                  name: double
+                  value: 25.0
+        - insert:
+            tableName:
+            columns:
+              - column:
+                  name: level
+                  value: 2
+              - column:
+                  name: difficulty
+                  value: "EASY"
+              - column:
+                  name: problem
+                  value: "NKDMVG DIRVMYN XGJXFRDNZ \n NOVODIR AMJH OJK MDBCO"
+              - column:
+                  name: hint
+                  value: "Two gemstones and six crystals have broken the magic"
+              - column:
+                  name: solution
+                  value: "Spiral inwards, clockwise, starting from top right"
+              - column:
+                  name: double
+                  value: 35.0
+        - insert:
+            tableName:
+            columns:
+              - column:
+                  name: level
+                  value: 3
+              - column:
+                  name: difficulty
+                  value: "EASY"
+              - column:
+                  name: problem
+                  value: "RHXEOM ANDYS SETSOM HTATOO OVIRR AHSER EEVA HMONETE"
+              - column:
+                  name: hint
+                  value: "Follow the path of magic"
+              - column:
+                  name: solution
+                  value: "Most have the same story. One does not have a mirror"
+              - column:
+                  name: double
+                  value: 50.0
+        - insert:
+            tableName:
+            columns:
+              - column:
+                  name: level
+                  value: 4
+              - column:
+                  name: difficulty
+                  value: "EASY"
+              - column:
+                  name: problem
+                  value: "Step on no pets. \n
+                          Was it a cat I saw? \n
+                          No melon, no lemon. \n
+                          Do not nod."
+              - column:
+                  name: hint
+                  value: ""
+              - column:
+                  name: solution
+                  value: "Do not nod."
+              - column:
+                  name: double
+                  value: 65.0
+        - insert:
+            tableName:
+            columns:
+              - column:
+                  name: level
+                  value: 5
+              - column:
+                  name: difficulty
+                  value: "EASY"
+              - column:
+                  name: problem
+                  value: "FCAUKNHNOOGWHAG HQ MBIK SWKVH DIXFH. \n
+                          WDFR QHAHBQIR?"
+              - column:
+                  name: hint
+                  value: "Follow the advice and you shall reach the end."
+              - column:
+                  name: solution
+                  value: "Congratulations on your first quest. \n
+                          Dare continue?"
+              - column:
+                  name: double
+                  value: 80.0

@@ -1,0 +1,117 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 1
+      author: steph
+      changes:
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 1
+              - column:
+                  name: difficulty
+                  value: "MEDIUM"
+              - column:
+                  name: problem
+                  value: "PIGPEN CIPHER -> PICTURE"
+              - column:
+                  name: hint
+                  value: "-> will need to access direct link"
+              - column:
+                  name: solution
+                  value: "Go to the next one"
+              - column:
+                  name: double
+                  value: 100.0
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 2
+              - column:
+                  name: difficulty
+                  value: "MEDIUM"
+              - column:
+                  name: problem
+                  value: "III/2 II/4 IV/2 IV/2 III/4 IV/2"
+              - column:
+                  name: hint
+                  value: ""
+              - column:
+                  name: solution
+                  value: "Mirror"
+              - column:
+                  name: double
+                  value: 115.0
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 3
+              - column:
+                  name: difficulty
+                  value: "MEDIUM"
+              - column:
+                  name: problem
+                  value: "YXUVF QGPAUT"
+              - column:
+                  name: hint
+                  value: "Your key is reciprocal"
+              - column:
+                  name: solution
+                  value: "Think binary"
+              - column:
+                  name: double
+                  value: 130.0
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 4
+              - column:
+                  name: difficulty
+                  value: "MEDIUM"
+              - column:
+                  name: problem
+                  value: "abbba abbab aabaa baaba aabaa babab \n
+                          aabaa abbab abbab abaaa abbab aabaa \n
+                          aaaaa abbab aaabb baabb babba aabaa \n
+                          ababb babab aabaa aabbb aaaaa babab \n
+                          aabaa baabb babaa baaab abbab aabaa \n
+                          aaabb aaaba ababb abbba aaaba \n
+                          ababa babba abaaa baaba aabaa"
+              - column:
+                  name: hint
+                  value: "Think binary"
+              - column:
+                  name: solution
+                  value: "One, seven, nine and twelve have turned clockwise."
+              - column:
+                  name: double
+                  value: 145.0
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 5
+              - column:
+                  name: difficulty
+                  value: "MEDIUM"
+              - column:
+                  name: problem
+                  value: "GRILLE CIPHER -> PIC"
+              - column:
+                  name: hint
+                  value: "One, seven, nine and twelve have turned clockwise."
+              - column:
+                  name: solution
+                  value: "Congratulations!"
+              - column:
+                  name: double
+                  value: 160.0

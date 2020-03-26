@@ -1,0 +1,202 @@
+databaseChangeLog:
+
+  - changeSet:
+      id: 1
+      author: steph
+      changes:
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 1
+              - column:
+                  name: difficulty
+                  value: "MEDIUM"
+              - column:
+                  name: problem
+                  value: "25,_,16,24,_,_,17,_,45 -> picture"
+              - column:
+                  name: hint
+                  value: "They all mirror each other"
+              - column:
+                  name: solution
+                  value: "121"
+              - column:
+                  name: double
+                  value: 40.0
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 2
+              - column:
+                  name: difficulty
+                  value: "MEDIUM"
+              - column:
+                  name: problem
+                  value: "-->pigpen cipher picture"
+              - column:
+                  name: hint
+                  value: ""
+              - column:
+                  name: solution
+                  value: "It disrupts"
+              - column:
+                  name: double
+                  value: 65.0
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 3
+              - column:
+                  name: difficulty
+                  value: "MEDIUM"
+              - column:
+                  name: problem
+                  value: "ANOE EATR RUUL STKL EDUI BBSQ HAARES"
+              - column:
+                  name: hint
+                  value: ""
+              - column:
+                  name: solution
+                  value: "Think about labeled squares"
+              - column:
+                  name: double
+                  value: 80.0
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 4
+              - column:
+                  name: difficulty
+                  value: "MEDIUM"
+              - column:
+                  name: problem
+                  value: "-> will be a picture"
+              - column:
+                  name: hint
+                  value: "Modern typing."
+              - column:
+                  name: solution
+                  value: "14253"
+              - column:
+                  name: double
+                  value: 95.0
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 5
+              - column:
+                  name: difficulty
+                  value: "MEDIUM"
+              - column:
+                  name: problem
+                  value: "WADCT AHBNA HNTOP HSSAC TAUNA"
+              - column:
+                  name: hint
+                  value: "Remember the order."
+              - column:
+                  name: solution
+                  value: "Clock"
+              - column:
+                  name: double
+                  value: 110.0
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 6
+              - column:
+                  name: difficulty
+                  value: "MEDIUM"
+              - column:
+                  name: problem
+                  value: "WDS VRG XOISE OWTOEEZA"
+              - column:
+                  name: hint
+                  value: "-> will need to access direct link"
+              - column:
+                  name: solution
+                  value: "-> will need to access direct link
+                          Use the magic directly"
+              - column:
+                  name: double
+                  value: 125.0
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 7
+              - column:
+                  name: difficulty
+                  value: "MEDIUM"
+              - column:
+                  name: problem
+                  value: "IV/4 II/3 I/5 I/4 II/5 I/1 II/2 II/4 IV/4 V/4 \n
+                          II/4 IV/3 II/4 III/3 IV/4 II/3 I/5 \n
+                          IV/4 IV/5 II/2 IV/4 II/1 I/5 IV/4 II/4 I/5 IV/5"
+              - column:
+                  name: hint
+                  value: ""
+              - column:
+                  name: solution
+                  value: "The duality is in the subtleties."
+              - column:
+                  name: double
+                  value: 140.0
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 8
+              - column:
+                  name: difficulty
+                  value: "MEDIUM"
+              - column:
+                  name: problem
+                  value: "Train\n
+                          Truck\n
+                          Subway\n
+                          Tram -> pictures"
+              - column:
+                  name: hint
+                  value: "Rider and carrier."
+              - column:
+                  name: solution
+                  value: "Train"
+              - column:
+                  name: double
+                  value: 155.0
+        - insert:
+            tableName: levels
+            columns:
+              - column:
+                  name: level
+                  value: 9
+              - column:
+                  name: difficulty
+                  value: "MEDIUM"
+              - column:
+                  name: problem
+                  value: "YEATHO OVCHLY HGSNW UAOEFA RUTPH MWOO"
+              - column:
+                  name: hint
+                  value: "Add the spells to raise the power."
+              - column:
+                  name: solution
+                  value: "You have come halfway through. \n
+                          Stop now?"
+              - column:
+                  name: double
+                  value: 170.0
