@@ -61,7 +61,7 @@ public class TrifidCipher {
     String finalCipherText = cipherText.toString();
     // modify to sensitive case text if option was chosen
     if (!ignoreCase) {
-      finalCipherText = removeIgnoreCaseFromCipherText(plainText, finalCipherText);
+      finalCipherText = transformIntoCaseSensitiveText(plainText, finalCipherText);
     }
     // add the special characters from plain text to cipher text if this option has been chosen
     if (!ignoreSpecialCharacters) {
@@ -71,7 +71,7 @@ public class TrifidCipher {
     return finalCipherText;
   }
 
-  private static String removeIgnoreCaseFromCipherText(final String plainText, String cipherText) {
+  private static String transformIntoCaseSensitiveText(final String plainText, String cipherText) {
     int positionToModifyInCipherText = 0;
     for (int i = 0; i < plainText.length(); i++) {
       if (Character.isLowerCase(plainText.charAt(i))) {

@@ -23,6 +23,10 @@ public class RailFenceCipher {
     // construct cipher from matrix
     final StringBuilder cipherText = new StringBuilder();
 
+    return buildCipherText(nrRails, ignoreCase, plainTextToEncrypt, railFenceMatrix, cipherText);
+  }
+
+  private static String buildCipherText(int nrRails, boolean ignoreCase, String plainTextToEncrypt, Character[][] railFenceMatrix, StringBuilder cipherText) {
     for (int i = 0; i < nrRails; i++) {
       for (int j = 0; j < plainTextToEncrypt.length(); j++) {
         if (railFenceMatrix[i][j] != '\n') {

@@ -35,6 +35,10 @@ public class ColumnarTranspositionCipher {
 
 
     // read cipher from matrix
+    return buildCipherText(nrRows, chiperMatrix, mapToDetermineOrderOfLetters, permutationOrder);
+  }
+
+  private static String buildCipherText(Integer nrRows, Character[][] chiperMatrix, Map<Integer, Integer> mapToDetermineOrderOfLetters, List<Integer> permutationOrder) {
     final StringBuilder cipherText = new StringBuilder();
 
     for(Integer alphabetOrder: permutationOrder) {

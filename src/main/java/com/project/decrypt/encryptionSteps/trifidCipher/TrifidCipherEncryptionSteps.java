@@ -61,6 +61,7 @@ public class TrifidCipherEncryptionSteps {
                 groupEncryptionMatrix, plainTextToUpperCase, letterEncryption);
 
         int letterPosition = 0;
+        // determine encipherment pairs from encryption groups
         List<Pair<Character, String>> encryptionGroup = new ArrayList<>();
         for(int col = 0; col < encryptionMatrixSize * groupSize; col++) {
             final StringBuilder letterEncoding = new StringBuilder();
@@ -75,6 +76,7 @@ public class TrifidCipherEncryptionSteps {
             letterPosition++;
         }
 
+        // determine encipherment pairs from last encryption group
         final int leftLetters = plainTextToUpperCase.length() % groupSize;
         final Integer[][] encryptionMatrixRemainingLetters = TrifidCipherHelper.
                 determineMatrixForRemainingLetters(plainTextToUpperCase, letterEncryption, leftLetters);

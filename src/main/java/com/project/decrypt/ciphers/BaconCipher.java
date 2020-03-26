@@ -18,6 +18,10 @@ public class BaconCipher {
     //build encryption map
     Map<Character, String> encryptionMap = buildEncryptionMap(firstChar, secondChar);
 
+    return buildCipherText(plainTextToEncrypt, encryptionMap);
+  }
+
+  private static String buildCipherText(String plainTextToEncrypt, Map<Character, String> encryptionMap) {
     final StringBuilder cipherText = new StringBuilder();
     for (int i = 0; i < plainTextToEncrypt.length(); i++) {
       if (Character.isUpperCase(plainTextToEncrypt.charAt(i))) {
